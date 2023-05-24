@@ -1,59 +1,82 @@
 body{
+    padding: 0;
     margin: 0;
-    display: flex;
+    /* display: flex;
     height: 100vh;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 
 }
-#cardcontainer{
-    width: 700px;
+
+/* ======= Styling the default parent card ========== */
+.parent-card{
+    /* background-image: url("https://images.unsplash.com/photo-1605347294501-0f88ac6c5326?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGF1cm9yYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"); */
+    /* background-size: cover; */
+    background: rgb(208,164,75);
+    width: 500px;
+    height: 300px;
     border-style: groove;
     border-radius: 50px;
     margin: 10px;
-    justify-content: center;
-    color: beige;
-    
+    /* justify-content: center; */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: beige;  
+}
 
+/* visa image styling */
+.visa-dim{
+    width:6rem;
+    height:3rem;
+    margin: 5px;
 }
-#images{
+
+/*  Putting the visa image at the end */
+.visa{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin: 15px;
-    
 }
-#dove{
-    width: 100px;
-    height: 100px;
-    border-radius: 30px;
+
+/* Chimp and wifi section styling */
+.cardchimp{
+    display: flex;
+    justify-content:flex-start;
+    margin-left: 50px;
 }
-#visa{
-    width: 100px;
+
+.chimp-dim{
+    width:4rem;
+    height:3rem;
+    margin: 8px;
 }
-.photos{
-    
-    justify-content: space-between;
-    
+
+.wifi-dim{
+    width:2.5rem;
+    height:3rem;
+    margin: 8px;
 }
-.cardcontainer{
-    width: 300px;
-    background-image: url("https://images.unsplash.com/photo-1605347294501-0f88ac6c5326?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGF1cm9yYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");
-    background-size: cover;
-    
-   
+
+/*  Card number Styling  */
+
+.card-number{
+    display: flex;
+    width: 180px;
+    margin: 0px 45px;
 }
-#cardnumberdisplay {
-    justify-content : center;
+
+.card-number p{
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    letter-spacing: 15px;
-    font-size: 30px;
+    letter-spacing: 10px;
+    font-size: 20px;
     box-sizing: border-box;
-    margin: 60px;
-    padding: 10px;
-   
+    padding: 8px;
 }
-.cardwords{
+
+/* .cardwords{
     display: flex;
     justify-content: space-between;
     margin: 50px;
@@ -63,4 +86,4 @@ body{
 #text{
     font-size: 20px;
     color: black;
-}
+} */

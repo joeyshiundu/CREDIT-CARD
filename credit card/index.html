@@ -8,24 +8,64 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="cardcontainer" class="cardcontainer">
-        <div id="images" class="images">
-            <img class="photo" id="dove" src="/toppng.com-open-contactless-payment-sv-1945x2436.png" alt="">
-            <img class="photo" src="/visa logo.png" id="visa" alt="visa" >
-        </div>
-        
-        <p id="cardnumberdisplay" class="cardnumberdisplay">################</p>
-        <div id="cardwords" class="cardwords">
-            <div id="cardholder" class="cardholder">
-                <p id="text">CARDHOLDER</p>
-                <p id="cardnamedisplay" class="cardnamedisplay">FULL NAME</p>
+    <!-- Form container to  -->
+    <div class="form-container">
+            <!-- Start of the Parent card -->
+            <div class="parent-card">
+                <!-- Front side of the visa card -->
+                <div class="front-side">
+                    <!-- Front image section -->
+                    <!-- Visa section -->
+                        <div id="images" class="visa">
+                            <img class="visa-dim" src= "images/visa3.png"  alt="visa" >
+                        </div>
+
+                        <!-- Chimp and wifi logo section  -->
+                        <div class="cardchimp">
+                            <img class="chimp-dim" src="images/cardchimp.png" alt="cardchimp">
+                            <img class="wifi-dim" src= "images/wifi.png"  alt="visa" >
+                        </div>
+                        
+                        <!-- Card Number -->
+                        <div class="card-number">
+                            <p>####</p>
+                            <p>####</p>
+                            <p>####</p>
+                            <p>####</p>
+                        </div>
+                        
+                        <!-- Card Holders name and expiry date-->
+
+                        <div class="texts">
+                            <!-- Card Holder Name Section -->
+                            <div class="holder-name">
+                                <p id="text">CARDHOLDER</p>
+                                <p id="cardnamedisplay" class="cardnamedisplay">FULL NAME</p>
+                            </div>
+
+                            <!-- Expiry Date -->
+                            <div class="exp-date">
+                                <p id="text">EXPIRES ON</p>
+                                <p id="carddatedisplay" class="carddatedisplay">MM/YY</p>
+                            </div>
+
+                        </div>
+
+                        <!-- <div id="cardwords" class="cardwords">
+                            <div id="cardholder" class="cardholder">
+                                <p id="text">CARDHOLDER</p>
+                                <p id="cardnamedisplay" class="cardnamedisplay">FULL NAME</p>
+                            </div>
+                            <div id="carddate" class="carddate">
+                                <p id="text">EXPIRES ON</p>
+                                <p id="carddatedisplay" class="carddatedisplay">MM/YY</p>
+                            </div> -->
+
+                           
+                       </div>
+                </div>
             </div>
-            <div id="carddate" class="carddate">
-                <p id="text">EXPIRES ON</p>
-                <p id="carddatedisplay" class="carddatedisplay">MM/YY</p>
-            </div>
-        </div>
-        </div>
+    </div>
         
 
     </div>
